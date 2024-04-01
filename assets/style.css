@@ -1,14 +1,20 @@
 * {
-	margin:  0px;
-	padding:  0px;
+	margin:  5px;
+	padding:  5px;
 	box-sizing: border-box;
 }
 
 /* adjusting fonts */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	font-family: 'Gang of Three', "Didot", -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+
 	transition: background 500ms ease;
+	color: limegreen;
+}
+@font-face {
+    font-family: 'Gang of Three';
+    src: url('go3v2.ttf')
 }
 
 p, li {
@@ -34,6 +40,11 @@ img {
 	max-width: 100%;
 	height:  auto;
 }
+.cursive {
+	font-family: cursive;
+	font-size: 80px;
+}
+
 
 /* uncomment the code below to set the grid */
 
