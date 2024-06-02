@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .title {
+            background-color: #f8f8f8;
+            padding: 16px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #f8f8f8;
+            padding: 16px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        .footer button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .footer button:hover {
+            background-color: #0056b3;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dark-mode .title,
+        .dark-mode .footer {
+            background-color: #333;
+            border-color: #444;
+        }
+        .dark-mode .footer button {
+            background-color: #1e90ff;
+        }
+        .dark-mode .footer button:hover {
+            background-color: #1c7ed6;
+        }
+        .dark-mode-toggle {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .dark-mode-toggle:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <button class="dark-mode-toggle" id="darkModeToggle">다크 모드</button>
+    <div class="title">나만의 퐁퐁두두 캐릭터 찾기</div>
+    <div class="content">
+        <img src="assets/titleimage.png" alt="타이틀 이미지">
+    </div>
+    <div class="footer">
+        <button onclick="window.location.href='question1.html'">캐릭터 찾기</button>
+    </div>
+    <script>
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>

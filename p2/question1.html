@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>심리테스트</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="set" id="set1">
+            <div class="question" id="question1-1">
+                <p>질문 1: 당신은 얼마나 외향적인가요?</p>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input type="range" min="0" max="6" value="0" class="slider" id="slider1-1">
+                    <span>6</span>
+                </div>
+            </div>
+            <div class="question" id="question1-2">
+                <p>질문 2: 당신은 얼마나 모험적인가요?</p>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input type="range" min="0" max="6" value="0" class="slider" id="slider1-2">
+                    <span>6</span>
+                </div>
+            </div>
+            <div class="question" id="question1-3">
+                <p>질문 3: 당신은 얼마나 창의적인가요?</p>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input type="range" min="0" max="6" value="0" class="slider" id="slider1-3">
+                    <span>6</span>
+                </div>
+            </div>
+        </div>
+        <div class="set" id="set2">
+            <div class="question" id="question2-1">
+                <p>질문 4: 당신은 얼마나 조직적인가요?</p>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input type="range" min="0" max="6" value="0" class="slider" id="slider2-1">
+                    <span>6</span>
+                </div>
+            </div>
+            <div class="question" id="question2-2">
+                <p>질문 5: 당신은 얼마나 신중한가요?</p>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input type="range" min="0" max="6" value="0" class="slider" id="slider2-2">
+                    <span>6</span>
+                </div>
+            </div>
+            <div class="question" id="question2-3">
+                <p>질문 6: 당신은 얼마나 개방적인가요?</p>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input type="range" min="0" max="6" value="0" class="slider" id="slider2-3">
+                    <span>6</span>
+                </div>
+            </div>
+        </div>
+        <div class="set" id="set3">
+            <div class="question" id="question3-1">
+                <p>질문 7: 당신은 얼마나 사교적인가요?</p>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input type="range" min="0" max="6" value="0" class="slider" id="slider3-1">
+                    <span>6</span>
+                </div>
+            </div>
+            <div class="question" id="question3-2">
+                <p>질문 8: 당신은 얼마나 자발적인가요?</p>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input type="range" min="0" max="6" value="0" class="slider" id="slider3-2">
+                    <span>6</span>
+                </div>
+            </div>
+            <div class="question" id="question3-3">
+                <p>질문 9: 당신은 얼마나 독립적인가요?</p>
+                <div class="slider-container">
+                    <span>0</span>
+                    <input type="range" min="0" max="6" value="0" class="slider" id="slider3-3">
+                    <span>6</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <button id="nextSetButton">다음 세트로 이동</button>
+        <button id="resultButton" style="display: none;">결과 보기</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
