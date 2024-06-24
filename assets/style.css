@@ -4,18 +4,19 @@
 	box-sizing: border-box;
 }
 
-/* adjusting fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 
 body {
-	font-family: 'Gang of Three', "Didot", -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+    font-family: 'Gaegu', cursive;
+    font-display: swap; /* 폰트가 준비되지 않은 경우 대체 폰트를 사용하고 준비되면 교체 */
 
 	transition: background 500ms ease;
-	color: limegreen;
+	color: darkcyan;
+	background-color: ivory; /* 원하는 배경색으로 변경 */
 }
-@font-face {
-    font-family: 'Gang of Three';
-    src: url('go3v2.ttf')
-}
+
+
+
 
 p, li {
 	font-size:  22px;
